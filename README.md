@@ -27,7 +27,7 @@ var ItemStatus = <>
   <Text>Caliph: <Text/>
 </>;
 
-var Component = <>
+var MyComponent = <>
   <Column>
     {
       for(var name in ["Abubakr", "Omar", "Osman", "Ali"])
