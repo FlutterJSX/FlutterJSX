@@ -14,6 +14,28 @@ Steps that should be done:
 10) Test it.
 11) Make hot reload for each .flx file.
 12) Etc.
+    
+### Rules 
+Widget gets property children when it will have multiple child elements at the same level. Gets child when it have only one child element. If you want a widget with children property to have only one child then you should put "child" value in its attributes. Like:
+```jsx
+var Component = <>
+  <Row child>
+    <Text>Child</Text>
+  </Row>
+</>
+```
+
+Also widgets with text property must have any text or {"string like this"} or string {variable}. But it is better to put it in attribute:
+```jsx
+var Component = <>
+  <Text>Hi</Text>
+  <Text text="Hi"> 
+  <Text>{variable}</Text>
+  <Text text={variable}> 
+  <Text>{"Hi"}</Text>
+  <Text text={"Hi"}>
+</>
+```
 
 ### Right now JSX syntax way is not selected. You can offer your variant and wants in discussion issue. Possible syntax:
 ```jsx
