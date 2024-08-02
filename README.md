@@ -14,8 +14,8 @@ Steps that should be done:
 10) Test it.
 11) Etc.
 
-### Right now JSX syntax is not selected. You can offer your variant and wants in discussion issue. Possible syntax:
-```dart
+### Right now JSX syntax way is not selected. You can offer your variant and wants in discussion issue. Possible syntax:
+```jsx
 var counter = 0;
 //Components should be <></> tags or (props) => <></> function(right now it is the best decision, mention in issues if you have better).
 var ItemText = (props) => <>
@@ -48,7 +48,7 @@ var Component = <>
 </>;
 ```
 ### or like in https://pub.dev/packages/xml_layout (it has ready parser, but makeup is kinda verbose):
-```jsx
+```dart
 //Components should be in <></> tags.
 var Component = <>
   <Column mainAxisAlignment="center">
