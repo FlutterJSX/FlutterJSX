@@ -12,7 +12,8 @@ Steps that should be done:
 8) Make compiler show warnings and errors.
 9) Find a way to connect it to Flutter app.
 10) Test it.
-11) Etc.
+11) Make hot reload for each .flx file.
+12) Etc.
 
 ### Right now JSX syntax way is not selected. You can offer your variant and wants in discussion issue. Possible syntax:
 ```jsx
