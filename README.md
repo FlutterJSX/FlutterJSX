@@ -36,6 +36,34 @@ var Component = <>
   <Text text={"Hi"}>
 </>
 ```
+### Condition elements 
+There is a new way to render a widget by condition putting them in <if {condition}></if> tag:
+```jsx
+var Component = <>
+  <if {true}>
+    <Text>Hi</Text>
+  </if>
+</>
+```
+or with else if:
+```jsx
+var Component = <>
+  <if {true}>
+    <Text>Hi</Text>
+  </if>
+  <elif {1==1}>
+    <Text>Hi</Text>
+  </elif> 
+  <elif {1!=2}>
+    <Text>Hi</Text>
+  </elif> 
+  <else>
+    <Text>Hi</Text>
+  </else>
+</>
+```
+Notice that elif and else need to be placed after if or another elif tag, while tag if can be alone.
+This tags will create an ugly condition?widget1:contition?widget2... code which you don't need to worry.
 
 ### Right now JSX syntax way is not selected. You can offer your variant and wants in discussion issue. Possible syntax:
 ```jsx
